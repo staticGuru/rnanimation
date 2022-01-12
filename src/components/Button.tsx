@@ -22,6 +22,7 @@ const styles = StyleSheet.create({
 const Button = ({ label, primary, onPress }: ButtonProps) => {
   const color = primary ? "white" : undefined;
   const backgroundColor = primary ? StyleGuide.palette.primary : undefined;
+  console.log("you are clicking");
   return (
     <RectButton {...{ onPress }}>
       <SafeAreaView style={{ backgroundColor }} accessible>
